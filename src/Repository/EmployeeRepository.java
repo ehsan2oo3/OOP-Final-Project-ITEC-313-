@@ -1,4 +1,4 @@
-package Reository;
+package Repository;
 
 import Model.Employee;
 
