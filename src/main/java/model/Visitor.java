@@ -54,10 +54,14 @@ public class Visitor{
 
     @Override
     public String toString() {
-        return "Visitor{id=" + getId() +
-                ", name='" + getName() +
-                "', balance=" + balance + "}";
+        return String.format(
+                "Visitor ID: %d | Name: %s | Balance: %.2f",
+                getId(),
+                getName(),
+                balance
+        );
     }
+
 
 
 }

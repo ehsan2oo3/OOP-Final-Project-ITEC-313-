@@ -52,6 +52,12 @@ public class Machine {
 
     @Override
     public String toString() {
-        return "Machine{id=" + Id + ", name='" + name + "', price=" + ticketPrice + ", active=" + active + "}";
+        return String.format(
+                "Machine ID: %d | Name: %s | Ticket Price: %.2f | Status: %s",
+                Id,
+                name,
+                ticketPrice,
+                active ? "ACTIVE" : "INACTIVE"
+        );
     }
 }

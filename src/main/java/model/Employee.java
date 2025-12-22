@@ -45,10 +45,14 @@ public class Employee{
         return id;
     }
 
+    @Override
     public String toString() {
-        return "Employee{id=" + getId() +
-                ", name='" + getName() +
-                "', role='" + role +
-                "', salary=" + salary + "}";
+        return String.format(
+                "Employee ID: %d | Name: %s | Role: %s | Salary: %.2f",
+                getId(),
+                getName(),
+                role,
+                salary
+        );
     }
 }
